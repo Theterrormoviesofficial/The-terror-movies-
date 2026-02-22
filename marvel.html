@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Movies - The Terror</title>
     <style>
-        body { margin: 0; background: #000; color: white; font-family: 'Arial Black', sans-serif; text-align: center; }
+        body    .movie-box { 
+        border: 1px solid #ff0000; 
+        border-radius: 8px; 
+        overflow: hidden; 
+        transition: 0.4s; 
+        background: rgba(255, 255, 255, 0.05); /* Transparent Background */
+        backdrop-filter: blur(5px);
+        }
+        { margin: 0; background: #000; color: white; font-family: 'Arial Black', sans-serif; text-align: center; }
         .marvel-banner { height: 45vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=800'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; }
         .back-btn { background: #ff0000; color: white; padding: 10px 20px; border: none; margin: 20px; cursor: pointer; border-radius: 5px; font-weight: bold; }
         .movie-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; padding: 20px 5px; }
